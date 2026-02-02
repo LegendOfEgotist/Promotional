@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Promotional — Your tagline here</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="A simple promotional landing page." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">Promotional</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="main-nav" class="nav">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Make an impression — quickly.</h1>
+        <p class="lead">Clean, fast, and responsive promotional landing page to showcase your product or service.</p>
+        <p><a class="btn" href="#contact">Get Started</a></p>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <article class="feature">
+        <h2>Fast</h2>
+        <p>Optimized for speed and performance so visitors get your message instantly.</p>
+      </article>
+      <article class="feature">
+        <h2>Responsive</h2>
+        <p>Looks great on phones, tablets, and desktops.</p>
+      </article>
+      <article class="feature">
+        <h2>Customizable</h2>
+        <p>Simple CSS and HTML so you can tailor the design to your brand.</p>
+      </article>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <p>Write a few sentences about what you’re promoting — product, service, event, or portfolio.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <form id="contact-form" action="#" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn">Send</button>
+        <p id="form-msg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Promotional. Built with ❤️.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
